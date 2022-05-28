@@ -105,8 +105,7 @@ height: auto;}
 .header .conteiner{
     display: flex;
     align-items: center;
-padding-top: 25px;
-padding-bottom: 25px;
+
 border-bottom: 1px solid #ECECEC;
 }
 .nav-list .header-link.current {
@@ -121,9 +120,11 @@ border-bottom: 1px solid #ECECEC;
     letter-spacing: 0.03em;
     color: var(--blue-color);
 }
-.logo-header{margin-right: 93px;}
+.logo-header{margin-right: 93px;
+padding: 25px 0;}
 .nav-list {display: flex;
     align-items: center;
+    padding: 32px 0;
     color: var(--black-color)
 }
 .header-item:not(:last-child){
@@ -133,7 +134,8 @@ border-bottom: 1px solid #ECECEC;
     margin-right: 50px;
 }
 .header-contacs-list{display: flex; 
-margin-left: auto;}
+margin-left: auto;
+padding: 32px 0;}
 .header-link {
     font-weight: 500;
     font-size: 14px;
