@@ -7,6 +7,9 @@
     --grey-color: #F5F4FA;
     --logo-color: #000000;
     --footer-color: #2F303A;
+    --card-gap-top: 30px;
+    --card-gap-left: 30px;
+    --card-item: 3;
 }
 
 .visually-hidden {
@@ -26,7 +29,8 @@ ul, ol{ margin: 0;
 padding-left: 0;}
 button{ cursor: pointer;}
 img{display: block;
-min-width: 100%;}
+max-width: 100%;
+height: auto;}
 .conteiner{
     width: 1200px;
     margin:  auto;
@@ -34,6 +38,17 @@ min-width: 100%;}
     padding-right: 15px;
     outline: 1px solid red;
 
+}
+.card-set{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-gap-top));
+    margin-left: calc(-1 * var(--card-gap-left));
+}
+.card-item {
+    margin-top: var(--card-gap-top);
+    margin-left: var(--card-gap-left);
+    flex-basis: calc(100% / var(--card-item) - var(--card-gap-left));
 }
 .body {
     font-family: 'Roboto', sans-serif;
@@ -316,14 +331,9 @@ button.filter-btn {
     flex-wrap: wrap;
 padding-top: 50px;
 padding-bottom: 94px;
-margin-bottom: -30px;
-margin-right: -30px;
+--card-item: 2;
 }
-.portfolio-list > .portfolio-item {
-flex-basis: calc(100% / 3 - 30px);
-margin-bottom: 30px;
-margin-right: 30px;
-}
+
 
 .portfolio-title {
     font-weight: 700;
